@@ -5,7 +5,7 @@ const events = [{
   calName:'2022假期安排',
   start: [2022, 1, 1],
   end: [2022, 1, 4],
-  title: '元旦',
+  title: '元旦假期',
   categories:['假期']
 },
 {
@@ -19,7 +19,7 @@ const events = [{
     calName:'2022假期安排',
   start: [2022, 1, 31],
   end: [2022, 2, 7],
-  title: '春节',
+  title: '春节假期',
   categories:['假期']
 },
 {
@@ -33,7 +33,7 @@ const events = [{
     calName:'2022假期安排',
   start: [2022, 4, 3],
   end: [2022, 4, 6],
-  title: '清明节',
+  title: '清明节假期',
   categories:['假期']
 },
 {
@@ -47,7 +47,7 @@ const events = [{
     calName:'2022假期安排',
   start: [2022, 4, 30],
   end: [2022, 5, 5],
-  title: '劳动节',
+  title: '劳动节假期',
   categories:['假期']
 },
 {
@@ -61,21 +61,21 @@ const events = [{
     calName:'2022假期安排',
   start: [2022, 6, 3],
   end: [2022, 6, 6],
-  title: '端午节',
+  title: '端午节假期',
   categories:['假期']
 },
 {
     calName:'2022假期安排',
   start: [2022, 9, 10],
   end: [2022, 9, 13],
-  title: '中秋节',
+  title: '中秋节假期',
   categories:['假期']
 },
 {
     calName:'2022假期安排',
   start: [2022, 10, 1],
   end: [2022, 10, 8],
-  title: '国庆节',
+  title: '国庆节假期',
   categories:['假期']
 },
 {
@@ -85,9 +85,12 @@ const events = [{
   title: '国庆节调休',
   categories:['上班']
 },
+{
+  start: [2022, 3, 12],
+  end: [2022, 3, 13],
+  title: '贾莹生日🎂',
+},
 ]
-
-
 
 ics.createEvents(events, (error, value) => {
   if (error) {

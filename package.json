@@ -1,0 +1,16 @@
+{
+  "name": "ics-qs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server -p 80"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "http-server": "^14.1.0",
+    "ics": "^2.35.0"
+  }
+}

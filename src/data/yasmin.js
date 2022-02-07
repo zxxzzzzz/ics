@@ -13,7 +13,6 @@ const events = Array(12).fill(0).map((_, cycleIndex) => {
       end: [td2.year(), td2.month() + 1, td2.date()],
       title: '记得吃药',
       alarms: [
-        { action: 'display', description: '吃药', trigger: [td.year(), td.month() + 1, td.date(), 12, 30] },
         { action: 'display', description: '吃药', trigger: [td.year(), td.month() + 1, td.date(), 18, 30] },
         { action: 'display', description: '吃药', trigger: [td.year(), td.month() + 1, td.date(), 22, 00] }
       ]

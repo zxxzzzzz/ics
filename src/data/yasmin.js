@@ -11,7 +11,7 @@ const events = Array(12).fill(0).map((_, cycleIndex) => {
     return {
       start: [td.year(), td.month() + 1, td.date()],
       end: [td2.year(), td2.month() + 1, td2.date()],
-      title: '记得吃药',
+      title: `吃第${dayIndex+1}片药`,
       alarms: [
         { action: 'display', description: '吃药', trigger: [td.year(), td.month() + 1, td.date(), 18, 30] },
         { action: 'display', description: '吃药', trigger: [td.year(), td.month() + 1, td.date(), 22, 00] }
@@ -19,6 +19,4 @@ const events = Array(12).fill(0).map((_, cycleIndex) => {
     }
   })
 }).flat()
-console.log(events);
-
 exports.data = events
